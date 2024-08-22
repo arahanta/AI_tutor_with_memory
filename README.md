@@ -71,6 +71,14 @@ Here’s a quick example of how to interact with the chatbot:
 
 If the user later asks, "Remind me of the capital of France," the bot will remember the previous conversation and provide a consistent answer.
 
+- **UI:**
+
+  
+![image](https://github.com/user-attachments/assets/e7fb529f-8f1d-4081-931a-ed300bfccb95)
+
+![image](https://github.com/user-attachments/assets/af4dbb86-99c8-4ad0-af85-a39c684c8d38)
+
+
 ## Contributing
 If you want to contribute to this project, please follow these steps:
 
