@@ -30,5 +30,5 @@ Before you begin, ensure you have met the following requirements:
 
 #### Clone the Repository:
 ```bash
-git clone https://github.com/yourusername/personal-ai-tutor.git
-cd personal-ai-tutor
+git clone https://github.com/yourusername/AI_Tutor_withmemory.git
+cd AI_Tutor_withmemory
