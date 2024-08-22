@@ -32,3 +32,63 @@ Before you begin, ensure you have met the following requirements:
 ```bash
 git clone https://github.com/yourusername/AI_Tutor_withmemory.git
 cd AI_Tutor_withmemory
+
+## Setup ChromaDB
+Ensure that ChromaDB is correctly configured and accessible. This project uses ChromaDB for memory management.
+
+## Configure Google API Key
+Create a `secrete.txt` file in the root directory and add your Google API key:
+
+```text
+YOUR_GOOGLE_API_KEY_HERE
+
+## Run the Application
+Start the Flask server:
+
+```bash
+python app.py
+The application will be available at http://127.0.0.1:5000.
+
+## File Structure
+- `app.py`: The main Flask application that handles API requests and serves the frontend.
+- `index.html`: The frontend interface for interacting with the chatbot.
+- `personal_ai_tutor.py`: Contains the PersonalAITutor class, managing AI interactions and memory.
+- `requirements.txt`: Lists all the dependencies required for the project.
+- `secrete.txt`: Contains the Google API key (not included in the repository).
+
+## How to Use
+1. Open a web browser and navigate to `http://127.0.0.1:5000`.
+2. Enter a User ID in the provided input field.
+3. Type a message or question in the chat input and click "Send".
+4. The bot will respond based on your input, and it will remember previous interactions associated with your User ID.
+5. You can switch User IDs at any time to simulate different users or test multiple scenarios.
+
+## Example
+Here’s a quick example of how to interact with the chatbot:
+
+- **User:** "What is the capital of France?"
+- **Bot:** "The capital of France is Paris."
+
+If the user later asks, "Remind me of the capital of France," the bot will remember the previous conversation and provide a consistent answer.
+
+## Contributing
+If you want to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature/your-feature`).
+6. Open a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Contact
+If you have any questions or issues, feel free to open an issue or contact me at [your-email@example.com].
+
+
+
+
+
+
