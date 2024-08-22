@@ -15,7 +15,7 @@ The Personal AI Tutor Chatbot is an interactive web-based AI-driven educational 
 - **LangChain:** A library for building applications powered by language models.
 - **ChromaDB:** Used as a vector store for memory management, allowing the bot to store and retrieve past user interactions.
 - **Google Generative AI (Gemini):** Provides the language model for generating responses.
-- **Mem0:**Mem0 enhances AI assistants and agents with an intelligent memory layer, enabling personalized AI interactions.
+- **Mem0:** Mem0 enhances AI assistants and agents with an intelligent memory layer, enabling personalized AI interactions.
 
 ## Getting Started
 
