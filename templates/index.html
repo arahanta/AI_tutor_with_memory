@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .chat-container {
+            width: 400px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+        .chat-box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 20px;
+        }
+        .chat-input {
+            width: calc(100% - 50px);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        .send-button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .user-id-input {
+            width: calc(100% - 50px);
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <input type="text" id="user-id-input" class="user-id-input" placeholder="Enter your User ID" />
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="chat-input" class="chat-input" placeholder="Type your message..." />
+        <button class="send-button" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var input = document.getElementById("chat-input").value;
+            var userId = document.getElementById("user-id-input").value;
+            var chatBox = document.getElementById("chat-box");
+
+            if (input.trim() === "" || userId.trim() === "") {
+                alert("Please enter both a message and a User ID.");
+                return;
+            }
+
+            var message = document.createElement("div");
+            message.textContent = "You: " + input;
+            chatBox.appendChild(message);
+
+            // Send message to the backend
+            fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    user_id: userId,
+                    question: input
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                var botMessage = document.createElement("div");
+                botMessage.textContent = "Bot: " + data.response;
+                chatBox.appendChild(botMessage);
+            });
+
+            document.getElementById("chat-input").value = "";
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>
