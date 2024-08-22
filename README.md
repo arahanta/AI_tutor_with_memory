@@ -82,10 +82,26 @@ If you want to contribute to this project, please follow these steps:
 6. Open a pull request.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Custom License
 
-## Contact
-If you have any questions or issues, feel free to open an issue or contact me at pokhrelarahanta5@gmail.com.
+### 1. License Grant
+Arahanta pokhrel grants you a non-exclusive, non-transferable license to use, but not to modify or distribute, the software for personal or internal business purposes only.
+
+### 2. Restrictions
+- You may not use this software for commercial purposes without explicit permission from Arahanta Pokhrel.
+- You may not distribute, sell, or sublicense the software to third parties.
+
+### 3. Ownership
+All rights, title, and interest in and to the software, including any intellectual property rights, remain with Arahanta Pokhrel.
+
+### 4. No Warranty
+The software is provided "as is," without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability or fitness for a particular purpose.
+
+### 5. Contact
+For any questions regarding this license or to request a commercial license, please contact Arahanta Pokhrel.
+
+
+
 
 
 
