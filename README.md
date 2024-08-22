@@ -26,13 +26,13 @@ Before you begin, ensure you have met the following requirements:
 - A valid Google API key for the Generative AI (Gemini) service.
 - A `secrete.txt` file in the root directory containing your Google API key.
 
-### Installation
+## Installation
 
 #### Clone the Repository:
 ```bash
 git clone https://github.com/yourusername/AI_Tutor_withmemory.git
 cd AI_Tutor_withmemory
-
+```
 ## Setup ChromaDB
 Ensure that ChromaDB is correctly configured and accessible. This project uses ChromaDB for memory management.
 
@@ -41,14 +41,14 @@ Create a `secrete.txt` file in the root directory and add your Google API key:
 
 ```text
 YOUR_GOOGLE_API_KEY_HERE
-
+```
 ## Run the Application
 Start the Flask server:
 
 ```bash
 python app.py
+```
 The application will be available at http://127.0.0.1:5000.
-
 ## File Structure
 - `app.py`: The main Flask application that handles API requests and serves the frontend.
 - `index.html`: The frontend interface for interacting with the chatbot.
@@ -85,7 +85,7 @@ If you want to contribute to this project, please follow these steps:
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-If you have any questions or issues, feel free to open an issue or contact me at [your-email@example.com].
+If you have any questions or issues, feel free to open an issue or contact me at pokhrelarahanta5@gmail.com.
 
 
 
