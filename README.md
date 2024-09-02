@@ -2,7 +2,9 @@
 
 ## Overview
 The Personal AI Tutor Chatbot is an interactive web-based AI-driven educational tool designed to assist students with their questions across various subjects. The system leverages Google's Generative AI via the LangChain library and incorporates memory management using ChromaDB to provide personalized responses based on past interactions with each user.
-demo: https://www.youtube.com/watch?v=rlx9AtRs1fw&t=11s&ab_channel=AllAboutAll
+
+[![Demo Video](https://img.youtube.com/vi/rlx9AtRs1fw/0.jpg)](https://www.youtube.com/watch?v=rlx9AtRs1fw&t=11s&ab_channel=AllAboutAll)
+
 
 ## Features
 - **Interactive Chat Interface:** Users can interact with the chatbot through a simple web interface.
